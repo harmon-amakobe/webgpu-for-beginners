@@ -3,3 +3,6 @@
 
 ## User settings
 xcuserdata/
+
+## ignore all the node packages that can be installed via npm -i
+node_modules/
