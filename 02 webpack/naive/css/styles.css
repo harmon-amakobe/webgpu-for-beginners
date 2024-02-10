@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+  }
+  
+  .input label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+  
+  .input input {
+    width: 200px;
+  }
+  
+  .input input[type="submit"] {
+    margin-left: 10px;
+  }
+  
+  .intermediate {
+    margin-bottom: 10px;
+  }
+  
+  .intermediate p {
+    margin: 0;
+  }
+  
+  .output {
+    margin-bottom: 10px;
+  }
+  
+  .output p {
+    margin: 0;
+  }
+  
+  @media (max-width: 500px) {
+    #container {
+      width: 100%;
+    }
+  }
+  
