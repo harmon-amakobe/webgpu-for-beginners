@@ -12,11 +12,11 @@ const hex_output = document.getElementById("hexadecimal");
 
 const click = () => {
 
-    binary = dec_to_binary(Number(decimal_input.value));
+    const binary = dec_to_binary(Number(decimal_input.value));
     binary_step.innerText = "binary: " + binary;
     
-    tempStr = "grouped: ";
-    grouped_binary = group_binary(binary);
+    var tempStr = "grouped: ";
+    const grouped_binary = group_binary(binary);
     for (let i = 0; i < grouped_binary.length; i++) {
         tempStr += grouped_binary[i] + " ";
     }
