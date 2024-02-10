@@ -1,8 +1,24 @@
 const path = require("path");
 module.exports = {
-    entry: "./src/hex-verter/main.js",
+    context: __dirname,
+    entry: "./src/hex-verter/main.ts",
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "ts-loader"
+                }
+            }
+        ]
+    },
+    resolve: {
+        extensions: [".ts"]
     }
 }
